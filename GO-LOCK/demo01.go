@@ -7,6 +7,7 @@ import (
 	heavylock "github.com/viney-shih/go-lock"
 )
 
+//go-lock提供了try锁
 func main() {
 	myCAXMutex := heavylock.NewCASMutex()
 	go func() {
